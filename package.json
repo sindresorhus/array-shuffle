@@ -1,0 +1,37 @@
+{
+  "name": "array-shuffle",
+  "version": "0.0.0",
+  "description": "Randomize the order of items in an array",
+  "license": "MIT",
+  "repository": "sindresorhus/array-shuffle",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "browser": "browserify -s $npm_package_name -o browser.js ."
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "array",
+    "arr",
+    "list",
+    "shuffle",
+    "sort",
+    "random",
+    "rand",
+    "fisher",
+    "yates"
+  ],
+  "devDependencies": {
+    "browserify": "*",
+    "mocha": "*"
+  }
+}

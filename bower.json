@@ -1,0 +1,31 @@
+{
+  "name": "array-shuffle",
+  "description": "Randomize the order of items in an array",
+  "license": "MIT",
+  "main": "browser.js",
+  "authors": [
+    {
+      "name": "Sindre Sorhus",
+      "email": "sindresorhus@gmail.com",
+      "url": "http://sindresorhus.com"
+    }
+  ],
+  "keywords": [
+    "array",
+    "arr",
+    "list",
+    "shuffle",
+    "sort",
+    "random",
+    "rand",
+    "fisher",
+    "yates"
+  ],
+  "ignore": [
+    "**/.*",
+    "component.json",
+    "package.json",
+    "test.js",
+    "index.js"
+  ]
+}
