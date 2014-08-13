@@ -11,14 +11,6 @@ Uses the [Fisher–Yates algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%9
 $ npm install --save array-shuffle
 ```
 
-```sh
-$ bower install --save array-shuffle
-```
-
-```sh
-$ component install sindresorhus/array-shuffle
-```
-
 
 ## Usage
 
