@@ -7,7 +7,7 @@ Uses the [Fisher–Yates algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%9
 
 ## Install
 
-```sh
+```
 $ npm install --save array-shuffle
 ```
 
@@ -15,11 +15,11 @@ $ npm install --save array-shuffle
 ## Usage
 
 ```js
-var shuffled = arrayShuffle([1, 2, 3, 4, 5, 6]);
+const shuffled = arrayShuffle([1, 2, 3, 4, 5, 6]);
 //=> [3, 5, 4, 1, 2, 6]
 ```
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
