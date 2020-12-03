@@ -1,38 +1,39 @@
 {
-  "name": "array-shuffle",
-  "version": "1.0.1",
-  "description": "Randomize the order of items in an array",
-  "license": "MIT",
-  "repository": "sindresorhus/array-shuffle",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=10"
-  },
-  "scripts": {
-    "test": "xo && ava && tsd"
-  },
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
-  "keywords": [
-    "array",
-    "list",
-    "shuffle",
-    "sort",
-    "random",
-    "rand",
-    "fisher",
-    "yates",
-    "durstenfeld"
-  ],
-  "devDependencies": {
-    "ava": "^3.13.0",
-    "tsd": "^0.13.1",
-    "xo": "^0.35.0"
-  }
+	"name": "array-shuffle",
+	"version": "1.0.1",
+	"description": "Randomize the order of items in an array",
+	"license": "MIT",
+	"repository": "sindresorhus/array-shuffle",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"test": "xo && ava && tsd"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"keywords": [
+		"array",
+		"list",
+		"shuffle",
+		"sort",
+		"random",
+		"rand",
+		"fisher",
+		"yates",
+		"durstenfeld"
+	],
+	"devDependencies": {
+		"ava": "^3.13.0",
+		"tsd": "^0.13.1",
+		"xo": "^0.35.0"
+	}
 }

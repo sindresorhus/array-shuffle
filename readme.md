@@ -1,4 +1,4 @@
-# array-shuffle [![Build Status](https://travis-ci.org/sindresorhus/array-shuffle.svg?branch=master)](https://travis-ci.org/sindresorhus/array-shuffle)
+# array-shuffle
 
 > Randomize the order of items in an array
 
