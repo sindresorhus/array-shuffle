@@ -1,6 +1,6 @@
-import test from 'ava';
-import m from './';
+const test = require('ava');
+const arrayShuffle = require('.');
 
-test(t => {
-	t.notDeepEqual(m([1, 2, 3, 4, 5, 6]), [1, 2, 3, 4, 5, 6]);
+test('main', t => {
+	t.notDeepEqual(arrayShuffle([1, 2, 3, 4, 5, 6]), [1, 2, 3, 4, 5, 6]);
 });

@@ -1,20 +1,16 @@
 'use strict';
-module.exports = function (arr) {
-	if (!Array.isArray(arr)) {
-		throw new TypeError('Expected Array, got ' + typeof arr);
+
+module.exports = array => {
+	if (!Array.isArray(array)) {
+		throw new TypeError(`Expected an array, got ${typeof array}`);
 	}
 
-	var rand;
-	var tmp;
-	var len = arr.length;
-	var ret = arr.slice();
+	array = [...array];
 
-	while (len) {
-		rand = Math.floor(Math.random() * len--);
-		tmp = ret[len];
-		ret[len] = ret[rand];
-		ret[rand] = tmp;
+	for (let index = array.length - 1; index > 0; index--) {
+		const newIndex = Math.floor(Math.random() * (index + 1));
+		[array[index], array[newIndex]] = [array[newIndex], array[index]];
 	}
 
-	return ret;
+	return array;
 };

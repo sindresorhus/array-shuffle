@@ -2,15 +2,13 @@
 
 > Randomize the order of items in an array
 
-Uses the [Fisher–Yates algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle).
-
+Uses the [Durstenfeld algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#The_modern_algorithm) based on the [Fisher–Yates algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle).
 
 ## Install
 
 ```
-$ npm install --save array-shuffle
+$ npm install array-shuffle
 ```
-
 
 ## Usage
 
@@ -19,7 +17,12 @@ const shuffled = arrayShuffle([1, 2, 3, 4, 5, 6]);
 //=> [3, 5, 4, 1, 2, 6]
 ```
 
+## API
 
-## License
+### arrayShuffle(array)
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+#### array
+
+Type: `array`
+
+The array to shuffle.
