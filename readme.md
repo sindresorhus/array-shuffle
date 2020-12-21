@@ -13,7 +13,7 @@ $ npm install array-shuffle
 ## Usage
 
 ```js
-const arrayShuffled = require('array-shuffled');
+const arrayShuffle = require('array-shuffle');
 
 const shuffled = arrayShuffle([1, 2, 3, 4, 5, 6]);
 //=> [3, 5, 4, 1, 2, 6]
