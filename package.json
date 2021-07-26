@@ -10,8 +10,10 @@
 		"email": "sindresorhus@gmail.com",
 		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
+	"exports": "./index.js",
 	"engines": {
-		"node": ">=10"
+		"node": ">=12.20"
 	},
 	"scripts": {
 		"test": "xo && ava && tsd"
@@ -32,8 +34,8 @@
 		"durstenfeld"
 	],
 	"devDependencies": {
-		"ava": "^3.13.0",
-		"tsd": "^0.13.1",
-		"xo": "^0.35.0"
+		"ava": "^3.15.0",
+		"tsd": "^0.17.0",
+		"xo": "^0.42.0"
 	}
 }

@@ -1,5 +1,5 @@
 import {expectType} from 'tsd';
-import arrayShuffle = require('.');
+import arrayShuffle from './index.js';
 
 const fixture = [1, 2, 3, 4, 5];
 

@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = array => {
+export default function arrayShuffle(array) {
 	if (!Array.isArray(array)) {
 		throw new TypeError(`Expected an array, got ${typeof array}`);
 	}
@@ -13,4 +11,4 @@ module.exports = array => {
 	}
 
 	return array;
-};
+}
