@@ -6,8 +6,8 @@ Uses the [Durstenfeld algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Ya
 
 ## Install
 
-```
-$ npm install array-shuffle
+```sh
+npm install array-shuffle
 ```
 
 ## Usage
