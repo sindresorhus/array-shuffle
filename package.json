@@ -1,6 +1,6 @@
 {
 	"name": "array-shuffle",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"description": "Randomize the order of items in an array",
 	"license": "MIT",
 	"repository": "sindresorhus/array-shuffle",
