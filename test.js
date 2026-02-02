@@ -2,9 +2,12 @@ import test from 'ava';
 import {arrayToShuffled, arrayShuffle} from './index.js';
 
 test('arrayToShuffled - main', t => {
-	// Test with a larger array to reduce probability of random failure
 	const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-	t.notDeepEqual(arrayToShuffled(input), input);
+	const expected = [...input.slice(1), input[0]];
+	const randomNumberGenerator = () => 0;
+	const output = arrayToShuffled(input, {randomNumberGenerator});
+
+	t.deepEqual(output, expected);
 });
 
 test('arrayToShuffled - does not mutate input', t => {
@@ -53,13 +56,12 @@ test('arrayShuffle - mutates in place', t => {
 });
 
 test('arrayShuffle - shuffles array', t => {
-	// Test with a larger array to reduce probability of random failure
-	// With 10 elements, probability of same order is 1/3,628,800
 	const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-	const originalOrder = [...array];
-	arrayShuffle(array);
+	const expected = [...array.slice(1), array[0]];
+	const randomNumberGenerator = () => 0;
+	arrayShuffle(array, {randomNumberGenerator});
 
-	t.notDeepEqual(array, originalOrder);
+	t.deepEqual(array, expected);
 });
 
 test('arrayShuffle - handles empty array', t => {
@@ -81,6 +83,15 @@ test('arrayShuffle - throws on non-array', t => {
 	t.throws(() => arrayShuffle(123), {message: 'Expected an array, got number'});
 	t.throws(() => arrayShuffle(null), {message: 'Expected an array, got object'});
 	t.throws(() => arrayShuffle(undefined), {message: 'Expected an array, got undefined'});
+});
+
+test('arrayShuffle - throws on invalid randomNumberGenerator', t => {
+	t.throws(() => arrayShuffle([1, 2, 3], {randomNumberGenerator: 123}), {message: 'Expected randomNumberGenerator to be a function, got number'});
+});
+
+test('arrayShuffle - throws on invalid options', t => {
+	t.throws(() => arrayShuffle([1, 2, 3], 123), {message: 'Expected options to be an object, got number'});
+	t.throws(() => arrayShuffle([1, 2, 3], null), {message: 'Expected options to be an object, got object'});
 });
 
 test('arrayShuffle - maintains all elements', t => {

@@ -28,11 +28,11 @@ console.log(array);
 
 ## API
 
-### arrayToShuffled(array)
+### arrayToShuffled(array, options?)
 
 Create a new array with the items randomized (does not mutate the original array).
 
-Return a new array with the items randomized.
+Returns a new array with the items randomized.
 
 #### array
 
@@ -40,7 +40,25 @@ Type: `Array`
 
 The array to shuffle.
 
-### arrayShuffle(array)
+#### options
+
+Type: `object`
+
+##### randomNumberGenerator
+
+Type: `() => number`
+
+Custom random number generator that returns a float between 0 (inclusive) and 1 (exclusive). This is useful for deterministic shuffling when you use a seeded generator.
+
+```js
+import {arrayToShuffled} from 'array-shuffle';
+
+const randomNumberGenerator = () => 0;
+const deterministic = arrayToShuffled([1, 2, 3, 4, 5, 6], {randomNumberGenerator});
+//=> [2, 3, 4, 5, 6, 1]
+```
+
+### arrayShuffle(array, options?)
 
 Randomize the order of items in an array, mutating the array in-place.
 
@@ -51,3 +69,13 @@ Returns the input array shuffled.
 Type: `Array`
 
 The array to shuffle.
+
+#### options
+
+Type: `object`
+
+##### randomNumberGenerator
+
+Type: `() => number`
+
+Custom random number generator that returns a float between 0 (inclusive) and 1 (exclusive). This is useful for deterministic shuffling when you use a seeded generator.
